@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.1",
+  "id": "virtual-plan-1",
+  "mode": "execute",
+  "purpose": "虚构演练，未连接或操作任何网站。",
+  "target": {
+    "id": "virtual-site",
+    "origin": "https://example.org",
+    "environment": "test",
+    "cms": "simulation",
+    "connection_ref": "simulation-connector",
+    "user_ref": "virtual-editor",
+    "observed_at": "2026-10-14T10:00:00+08:00",
+    "capability_evidence": "虚构能力描述，只供结构测试，非真实CMS能力验证。",
+    "capabilities": {
+      "read": true,
+      "create_draft": true,
+      "update": true,
+      "publish": true,
+      "schedule": true,
+      "upload_media": true,
+      "restore": true,
+      "conditional_write": true
+    }
+  },
+  "actions": [
+    {
+      "id": "a1",
+      "op": "update",
+      "resource": {
+        "kind": "post",
+        "id": "virtual-17"
+      },
+      "before": {
+        "version": "simulation-version-1",
+        "fields": {
+          "title": "示例文章（虚构）",
+          "content": "<p>这是一段虚构内容，仅用于网站操作演练。</p>",
+          "status": "draft",
+          "excerpt": "虚构示例"
+        },
+        "sha256": "be49285e767a9ff946b74022a7bbaf6216297a01a61ff8cdf99c1d10dbf5f49f"
+      },
+      "patch": {
+        "excerpt": "虚构示例：字段更新演练"
+      },
+      "readiness": {
+        "snapshot_sha256": "85c78f5210eef50ce39863973f202b2f22f16c921b5491bf4d564372410a8bd0",
+        "checks": {
+          "editorial": {
+            "status": "not_required",
+            "record": "虚构结构演练，无真实医疗资料或对外发布；不代表真实审查完成。"
+          },
+          "evidence": {
+            "status": "not_required",
+            "record": "虚构结构演练，无真实医疗资料或对外发布；不代表真实审查完成。"
+          },
+          "medical": {
+            "status": "not_required",
+            "record": "虚构结构演练，无真实医疗资料或对外发布；不代表真实审查完成。"
+          },
+          "channel": {
+            "status": "not_required",
+            "record": "虚构结构演练，无真实医疗资料或对外发布；不代表真实审查完成。"
+          },
+          "privacy": {
+            "status": "not_required",
+            "record": "虚构结构演练，无真实医疗资料或对外发布；不代表真实审查完成。"
+          }
+        }
+      },
+      "asset": null,
+      "backup": null,
+      "reason": "演练局部更新摘要，保留原文与草稿状态。"
+    }
+  ]
+}

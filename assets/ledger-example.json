@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.1",
+  "plan_sha256": "c3cb9a920883446e558b1ae679d258bf4d3599cd194b875f5aa8eb3e40e70287",
+  "entries": [
+    {
+      "action_id": "a1",
+      "attempt_key": "virtual-attempt-1",
+      "state": "verified",
+      "executed_at": "2026-10-14T10:20:00+08:00",
+      "note": "虚构回执与读回，一切仅为程序演练；未操作网站。",
+      "receipt_ref": "虚构回执",
+      "readback": {
+        "site_id": "virtual-site",
+        "resource_id": "virtual-17",
+        "observed_at": "2026-10-14T10:21:00+08:00",
+        "evidence_ref": "虚构读回片段",
+        "fields": {
+          "title": "示例文章（虚构）",
+          "content": "<p>这是一段虚构内容，仅用于网站操作演练。</p>",
+          "status": "draft",
+          "excerpt": "虚构示例：字段更新演练"
+        },
+        "fields_sha256": "85c78f5210eef50ce39863973f202b2f22f16c921b5491bf4d564372410a8bd0"
+      },
+      "public_check": null
+    }
+  ]
+}

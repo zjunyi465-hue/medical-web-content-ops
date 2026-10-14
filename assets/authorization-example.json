@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "plan_sha256": "c3cb9a920883446e558b1ae679d258bf4d3599cd194b875f5aa8eb3e40e70287",
+  "user_evidence": "虚构授权演练：允许在虚构测试站更新摘要；不是实际用户授权。",
+  "recorded_at": "2026-10-14T10:10:00+08:00",
+  "action_ids": [
+    "a1"
+  ],
+  "accept_non_atomic": []
+}
