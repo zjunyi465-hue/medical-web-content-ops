@@ -93,3 +93,9 @@ Skill **0.1.1**；plan与ledger schema **1.1**，authorization schema **1.0**。
 本项目用于网站内容操作，不提供个体诊疗、不替代医学专业或适用法律审查，不保证AI引用、收录或业务效果。资料仅限获准范围；不把患者信息、凭证或内部审查材料放入公开仓库。内容转换影响含义时返回内容审查，不在后台操作中擅自编写医疗事实。
 
 MIT License。可与独立的[内容生产](https://github.com/zjunyi465-hue/medical-geo-content)、[内容优化](https://github.com/zjunyi465-hue/medical-geo-optimize)流程配合，但不要求安装它们。
+
+## 接收写作或优化结果
+
+先确认用户选用的正文版本、标题、来源、图片及原审核记录。将Markdown/文章文本映射为后台字段后检查实际差异，建立本Skill的plan/readiness；不要直接把上游review.json重命名当authorization或ledger。只有覆盖本次内容及渠道的真实审核记录才能按范围交接，不能把model_checked、reviewed或退出0转换为专业或发布完成。
+
+同一文章创建草稿后，需要用真实新ID和读回快照再准备发布动作；媒体上传后也需先取得实际媒体信息。各Skill目前没有自动JSON适配器或一键串联服务；缺后台工具时交本地方案，不称已执行。
